@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    background-color: white;
+  }
+  
+  section {
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: .5rem;
+  }
+
+  #jan {
+    background-image: url(pictures/jan.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #febr {
+    background-image: url(pictures/feb.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #marc {
+    background-image: url(pictures/marc.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #apr {
+    background-image: url(pictures/april.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #may {
+    background-image: url(pictures/maj.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #june {
+    background-image: url(pictures/june.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #july {
+    background-image: url(pictures/july.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #aug {
+    background-image: url(pictures/aug.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #sept {
+    background-image: url(pictures/sept.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #oct {
+    background-image: url(pictures/okt.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #nov {
+    background-image: url(pictures/nov.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #dec {
+    background-image: url(pictures/dec.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* display: inline-block; */
+  }
+
+  .card:hover{
+    opacity: 1.0;
+    width: 300px;
+  }
+
+  
+  .card {
+    display: grid;
+    background-color: rgb(113, 113, 175);
+    grid-template-columns: repeat(2, 1fr);
+    opacity: 0.5;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100px;
+    height: 100px;
+    transition: linear 2s;
+    font-size: larger;
+    box-shadow: 5px 5px 5px;
+    border-radius: 50px;
+    align-items: center;
+  }
+  
+  /* .card > time:last-child {
+    grid-column: span 2;
+    text-align: center;
+  } */
+  
+  @media only screen and (max-width: 600px) {
+    section {
+      grid-template-columns: repeat(4, 1fr);
+    } 
+  }
+  
+  @media only screen and (max-width: 320px) {
+    section {
+      grid-template-columns: repeat(1, 1fr);
+    } 
+  }
+  
+  /* #root > section:nth-child(1) {
+    grid-template-columns: repeat(12, 1fr);
+  } */
+  
+  .funny {
+    background-color: rgb(110, 110, 232);
+    z-index: 1;
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  
+  @keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+  }
